@@ -1,0 +1,14 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav layout="fullscreen" mode="over" opened>
+    <div class="my-content">Main content</div>
+  </md-sidenav>
+  <md-toolbar class="md-elevation-z8">
+    {{title}}
+
+    <md-toolbar-row align="right">
+      <span class="flex"></span>
+    </md-toolbar-row>
+
+  </md-toolbar>
+</md-sidenav-container>
+<button id="scrollUp" color="primary" md-fab (click)="sidenav.toggle()"><md-icon svgIcon="st:menu"></md-icon></button>

@@ -1,0 +1,42 @@
+@import '~@angular/material/theming';
+
+$fabScales: 1.1;
+
+.flex {
+  flex: 1 1 auto;
+}
+
+md-toolbar {
+  padding-bottom: 0;
+  @include mat-elevation(5);
+}
+
+md-tab-group {
+  margin-bottom: 0;
+}
+
+md-tab {
+  margin-bottom: 0;
+}
+
+html,
+body,
+md-sidenav-container {
+  min-height: 100%;
+  md-sidenav {
+    padding: 10px;
+    min-height: 100%;
+  }
+}
+
+md-sidenav {
+  width: 350px;
+  height: 200px;
+}
+
+#scrollUp {
+  position: fixed;
+  margin-right: 10%;
+  margin-top: 10%;
+  transform: scale($fabScales, $fabScales) translate(1000px, -350%) !important;
+}
