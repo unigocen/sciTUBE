@@ -1,0 +1,12 @@
+// @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import './dark-theme.scss';
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+app-root {
+  height: 100%;
+  flex: 1 1 auto;
+}
